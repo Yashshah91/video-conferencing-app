@@ -8,47 +8,21 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
-    <!-- Login Overlay -->
-    <div id="login-overlay">
-        <div id="login-box">
-            <h2>Ivy Streams Login</h2>
-            <form id="login-form">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter password" required>
-                </div>
-                <button type="submit">Login</button>
-                <p id="login-error"></p>
-            </form>
-        </div>
-    </div>
 
-    <!-- Main App Content -->
-    <div id="main-content" style="display:none;">
-        <button id="join-btn">Join Stream</button>
+    <button id="join-btn">Join Stream</button>
 
-        <div id="stream-wrapper">
-            <div id="video-streams"></div>
+    <div id="stream-wrapper">
+        <div id="video-streams"></div>
 
-            <div id="stream-controls">
-                <button id="leave-btn">Leave Stream</button>
-                <button id="mic-btn">Mic On</button>
-                <button id="camera-btn">Camera on</button>
-            </div>
-        </div>
-
-        <!-- Logout button at bottom right -->
-        <div id="logout-container">
-            <span id="current-user"></span>
-            <button id="logout-btn">Logout</button>
+        <div id="stream-controls">
+            <button id="leave-btn">Leave Stream</button>
+            <button id="mic-btn">Mic On</button>
+            <button id="camera-btn">Camera on</button>
         </div>
     </div>
     
-    <script src="AgoraRTC_N-4.23.2.js"></script>
-    <script src='main.js'></script>
 </body>
+
+<script src="AgoraRTC_N-4.23.2.js"></script>
+<script src='main.js'></script>
 </html>
